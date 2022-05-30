@@ -6,7 +6,7 @@ describe('API Server', () => {
     test('getting data from home route / >>>  home route is working', async () => {
         const response = await request.get('/');
         expect(response.status).toEqual(200);
-        expect(response.text).toEqual('welcome to heroku server');
+        expect(response.text).toEqual('Hello User');
     });
     test('getting data from /data route', async () => {
         const response = await request.get('/data');
